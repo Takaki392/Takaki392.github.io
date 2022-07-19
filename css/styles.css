@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* テキスト */
+a {
+    /* テキスト装飾を指定するプロパティ */
+    text-decoration: none;
+}
+
+/* テキストの位置 */
+.text-end {
+    text-align: end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-md-center {
+    display: block;
+}
+
+/* ブロック要素化 */
+.d-block {
+    display: block;
+}
+
+/* フォントサイズ */
+.fontSize-1p5 {
+    font-size: 1.5rem;
+}
+
+/* フォントの種類 */
+.font-serif {
+    font-family: serif;
+}
+
+/* 画像のレスポンシブ化 */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 動画のレスポンシブ化 */
+.video-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 背景 */
+.bg-royalblue {
+    background-color: royalblue;
+}
+
+.bg-whitesmoke {
+    background-color: whitesmoke;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+/* border */
+.border-1px {
+    border: 1px solid black;
+}
+
+/* padding */
+.p-05rem {
+    padding: 0.5rem;
+}
+
+.p-1rem {
+    padding: 1rem;
+}
+
+.p-2rem{
+    padding: 2rem;
+}
+
+/* フレックスボックス */
+.d-flex {
+    display: flex;
+}
+
+.d-md-flex {
+    display: block;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+
+/*　レイアウト　*/
+.container {
+    display: flex;
+    flex-flow: row; /* 横 */
+}
+
+main {
+    flex: 4;
+    order: 2;
+}
+
+aside {
+    flex: 1 50px;
+    order: 1;
+}
+
+/* メディアクエリ */
+@media (min-width: 780px) {
+    .text-md-center {
+        text-align: center;
+    }
+
+    .img-fluid {
+        width: 500px;
+    }
+
+    .video-fluid {
+        width: 600px;
+    }
+
+    .d-md-flex {
+        display: flex;
+    }
+  }
