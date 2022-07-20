@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <header class="p-05rem bg-royalblue">
-        <h1 class="top text-end font-serif">MY PORTFOLIO</h1>
+    <header class="p-03rem bg-defult d-flex justify-content-between align-items-center header">
+        <h3 class="currentTime"></h3>
+        <h1 class="font-serif">MY PORTFOLIO</h1>
     </header>
 
     <div class="container">
@@ -21,7 +22,7 @@
                 <h2>自己紹介</h2>
                 <img src="./img/dog.png" height="150" alt="犬の画像">
                 <p>Takaki Ohoka</p>
-                <p>創価大学の理工学部情報システム工学科3年</p>
+                <p>東京の私立大学の理工学部情報システム工学科3年</p>
                 <p>主に情報工学と英語の勉強をしています！今は"Recursion"を学習中です。</p>
                 <p>ここでは自分の作ったプロジェクトを一部載せています。</p>
                 <p>ポートフォリオサイト作りの練習として、書いています。</p>
@@ -82,18 +83,37 @@
             <p><a href="#top">画面上部に戻る</a></p>
         </main>
 
-        <aside class="p-1rem bg-royalblue">
+        <aside class="p-1rem bg-defult aside">
             <h2>一覧</h2>
             <p><a href="#section1">自己紹介</a></p>
             <p><a href="#section2">skills</a></p>
             <p><a href="#section3">ポートフォリオ</a></p>
             <p><a href="#section4">連絡先</a></p>
+            <button class="bg-royalblue asideBtn" onclick="Controler.openModal();">サイドデザインの変更</button>
         </aside>
     </div>
 
-    <footer class="text-center p-05rem bg-royalblue">
+    <footer class="text-center p-05rem bg-defult footer">
         copyright &copy; Takaki OHOKA, ALL Rights Reserved.
     </footer>
+
+    <div class="visible d-none">
+        <div class="popup">
+            <div class="content">
+                <div class="d-flex justify-content-end">
+                    <button class="bg-red" onclick="Controler.closeModal()">×</button>
+                </div>
+                <p>色の変更</p>
+                <button class="bg-royalblue d-block mt-0p5rem mb-0p5rem" onclick="Controler.changeBackColor(`bg-royalblue`)">ロイヤルブルー</button>
+                <button class="bg-pink d-block mt-0p5rem mb-0p5rem" onclick="Controler.changeBackColor(`bg-pink`)">ピンク</button>
+                <button class="bg-orangered d-block mt-0p5rem mb-0p5rem" onclick="Controler.changeBackColor(`bg-orangered`)">オレンジレッド</button>
+                <button class="bg-green d-block mt-0p5rem mb-0p5rem" onclick="Controler.changeBackColor(`bg-green`)">グリーン</button>
+                <button class="bg-yellow d-block mt-0p5rem mb-0p5rem" onclick="Controler.changeBackColor(`bg-yellow`)">イエロー</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 
 </html>
