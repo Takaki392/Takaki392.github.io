@@ -21,18 +21,18 @@
             <h1 class="text-md-center">お問い合わせフォーム</h1>
 
             <p>お名前</p>
-            <input type="text" id="name" name="name" size="15" placeholder="お名前">
+            <input type="text" value="" id="name" name="name" size="15" placeholder="お名前">
 
             <p>メールアドレス</p>
-            <input type="mail" id="mail" name="mail" size="20" placeholder="メールアドレス">
+            <input type="email" value="" id="mail" name="mail" size="20" placeholder="メールアドレス">
 
             <p>件名</p>
-            <input type="text" id="subject" name="subject" size="15" placeholder="件名">
+            <input type="text" value="" id="subject" name="subject" size="15" placeholder="件名">
 
             <p>お問い合わせ内容</p>
-            <textarea id="message" name="message" placeholder="こちらにお問い合わせ内容を入力してください。"></textarea>
+            <textarea tabindex="0" accesskey="P" id="message" name="message" placeholder="こちらにお問い合わせ内容を入力してください。">お問い合わせ内容</textarea>
 
-            <button class="d-block" onclick="Controler.submit();">送信</button>
+            <input name="button" value="送信" class="d-block bg-royalblue" onclick="Controler.submit();">
 
         </div>
     </div>
